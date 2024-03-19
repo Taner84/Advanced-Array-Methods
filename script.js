@@ -32,15 +32,15 @@
 //  number *2 )
 //   console.log(result)
 
-const filter = (numbers, greaterThan) => {
-  let result = []
-  for (const number of numbers) {
-    if (number > greaterThan) {
-      result.push(number)
-    }
-  }
-  return result
-}
+// const filter = (numbers, greaterThan) => {
+//   let result = []
+//   for (const number of numbers) {
+//     if (number > greaterThan) {
+//       result.push(number)
+//     }
+//   }
+//   return result
+// }
 
 // console.log(filter([1, 2, 3, 4, 5, 6], 3))
 
@@ -49,13 +49,25 @@ const filter = (numbers, greaterThan) => {
 //   num > 4 || num < 2))
 
 
-const actors = [
-  { name: 'johnny', netWorth: 2000000 },
-  { name: 'amber', netWorth: 10 },
-  { name: 'leonardo', netWorth: 100000000 },
-]
+// const actors = [
+//   { name: 'johnny', netWorth: 2000000 },
+//   { name: 'amber', netWorth: 10 },
+//   { name: 'leonardo', netWorth: 100000000 },
+// ]
 
 // console.log(nums.filter(num => num > 4 || num < 2))
-let result = actors.filter(actor => actor.netWorth > 10)
+// let result = actors.filter(actor => actor.netWorth > 10)
 
-playground.innerHTML = `<h1>${result[0].name}</h1>`
+// playground.innerHTML = `<h1>${result[0].name}</h1>`
+
+//reduce
+
+function sum(a,b){
+  //return
+  return a + b
+}
+
+const nums = [1, 2, 3]
+const result = nums.reduce((a, b) => a + b)
+
+console.log(result)
